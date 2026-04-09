@@ -1,0 +1,23 @@
+{
+  "name": "jude",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "betterthantomorrow.calva",
+        "EditorConfig.EditorConfig"
+      ],
+      "settings": {
+        "files.eol": "\n",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "github.copilot.enable": {
+          "*": false
+        }
+      }
+    }
+  },
+  "postCreateCommand": "clojure -P"
+}

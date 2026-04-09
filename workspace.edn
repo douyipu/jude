@@ -1,0 +1,12 @@
+{:top-namespace "jude"
+ :interface-ns "ifc"
+ :default-profile-name "default"
+ :dialects ["clj"]
+ :compact-views #{}
+ :vcs {:name "git"
+       :auto-add false}
+ :tag-patterns {:stable "^stable-.*"
+                :release "^v[0-9].*"}
+ :template-data {:clojure-ver "1.12.4"}
+ :validations {:inconsistent-lib-versions {:type :warning
+                                           :exclude []}}}

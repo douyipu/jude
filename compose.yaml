@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agent-clojure-dev
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - clojure-m2:/root/.m2
+      - clojure-gitlibs:/root/.gitlibs
+    command: /bin/sh -lc "sleep infinity"
+
+volumes:
+  clojure-m2:
+  clojure-gitlibs:

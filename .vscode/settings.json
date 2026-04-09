@@ -1,0 +1,4 @@
+{
+  "calva.clojureLspPath": "/usr/local/bin/clojure-lsp",
+  "calva.enableClojureLspOnStart": "when-workspace-opened-use-workspace-root"
+}

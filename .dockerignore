@@ -1,0 +1,7 @@
+.git
+.gitignore
+.cpcache
+.clj-kondo
+.devcontainer
+.DS_Store
+.nrepl-port
